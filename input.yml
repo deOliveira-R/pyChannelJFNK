@@ -1,0 +1,21 @@
+!CaseInput
+boundary_conditions:
+  p_out: 1.5
+  T_in: 673
+  v_in: 7.5
+  qp_ave: 3.0E+4
+geometry:
+  H: 1.6
+  Rfo: 3.57E-3
+  Rci: 3.685E-3
+  clad_thickness: 5.65E-4
+  pin_pitch: 9.8E-3
+discretization:
+  axial_nodes: 25
+  radial_nodes_pin: 5
+physics_parameters:
+  g: 9.81
+xs_file: XS_data.hdf5
+numerics:
+  tol_newton: 1.0E-8
+  tol_krylov: 1.0E-7
